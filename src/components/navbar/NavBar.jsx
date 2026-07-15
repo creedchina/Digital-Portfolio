@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
+import './NavBar.css';
+import navIcon1 from '../../assets/images/nav-icon1.svg';
+import githubIcon from '../../assets/images/githubIcon.png';
+import navIcon3 from '../../assets/images/nav-icon3.svg';
 
 export const NavBar = () => {
 
@@ -39,8 +40,8 @@ return (
 
             <Container>
 
-                <Navbar.Brand href="#home">
-                    My Portfolio //I can add a logo here if I want to
+                <Navbar.Brand href="#home" className="navbar-brand-text">
+                    My Portfolio
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -52,16 +53,22 @@ return (
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Experience</Nav.Link>
+              <Nav.Link href="#certifications" className={activeLink === 'certifications' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('certifications')}>Certifications</Nav.Link>
+
+
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/frank-djiakeng-a73494355/"><img src={navIcon1} alt="" /></a>
+                <a href="#https://github.com/creedchina"><img src={githubIcon} alt="" /></a>
+                <a href="https://www.instagram.com/frank_fraizo/"><img src={navIcon3} alt="" /></a>
               </div>
+              
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
+
             </span>
           </Navbar.Collapse>
             </Container>
