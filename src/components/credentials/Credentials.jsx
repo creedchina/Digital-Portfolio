@@ -61,7 +61,7 @@ export const Credentials = () => {
     ];
 
     return (
-        <section className="credentials" id="certifications">
+        <section className="credentials" id="credentials">
             <Container>
 
                 {/* Heading */}
