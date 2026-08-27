@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import './NavBar.css';
 import navIcon1 from '../../assets/images/nav-icon1.svg';
 import githubIcon from '../../assets/images/githubIcon.png';
 import navIcon3 from '../../assets/images/nav-icon3.svg';
 
-export const NavBar = () => {
+export const NavBar = ({onDownloadResume}) => {
 
 const [activeLink, setActiveLink] = useState('home');
 const[scrolled, setScrolled] = useState(false);
@@ -52,22 +51,30 @@ return (
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Experience</Nav.Link>
-              <Nav.Link href="#certifications" className={activeLink === 'certifications' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('certifications')}>Certifications</Nav.Link>
+              <Nav.Link href="#journey" className={activeLink === 'journey' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('journey')}>Journey</Nav.Link>
+              {/* <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Experience</Nav.Link> */}
+              <Nav.Link href="#credentials" className={activeLink === 'credentials' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('credentials')}>Credentials</Nav.Link>
 
 
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/frank-djiakeng-a73494355/"><img src={navIcon1} alt="" /></a>
-                <a href="#https://github.com/creedchina"><img src={githubIcon} alt="" /></a>
+                <a href="https://github.com/creedchina"><img src={githubIcon} alt="" /></a>
                 <a href="https://www.instagram.com/frank_fraizo/"><img src={navIcon3} alt="" /></a>
               </div>
+
+
+              <button
+                  className="vvd"
+                  onClick={onDownloadResume}
+              >
+                  <span>Download Resume</span>
+              </button>
               
-              <HashLink to='#connect'>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
 
             </span>
           </Navbar.Collapse>

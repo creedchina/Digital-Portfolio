@@ -1,0 +1,610 @@
+/************ Journey Section ************/
+
+.journey {
+    padding: 90px 0;
+    position: relative;
+    background-color: #0f0f0f;
+    overflow: hidden;
+}
+
+/************ Heading ************/
+
+.journey-heading {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 60px;
+}
+
+.journey-label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: linear-gradient(
+        90.21deg,
+        rgba(170, 54, 124, 0.45) -5.91%,
+        rgba(74, 47, 189, 0.45) 111.58%
+    );
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.journey-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.journey-heading h2 span {
+    background: linear-gradient(
+        90.21deg,
+        #aa367c -5.91%,
+        #4a2fbd 111.58%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.journey-heading p {
+    color: #b8b8b8;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/************ Academic Timeline ************/
+
+.journey-timeline {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5px 0 0;
+}
+
+.journey-line {
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        #aa367c,
+        #4a2fbd
+    );
+    top: 0;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.journey-item {
+    width: 50%;
+    position: relative;
+    padding-bottom: 28px;
+    z-index: 1;
+}
+
+.journey-left {
+    margin-right: auto;
+    padding-right: 38px;
+    text-align: right;
+}
+
+.journey-right {
+    margin-left: 50%;
+    padding-left: 38px;
+    text-align: left;
+}
+
+/************ Timeline Dot ************/
+
+.journey-dot {
+    position: absolute;
+    top: 20px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 3px solid #0f0f0f;
+
+    color: #fff;
+    font-size: 16px;
+
+    background: linear-gradient(
+        90.21deg,
+        #aa367c -5.91%,
+        #4a2fbd 111.58%
+    );
+
+    z-index: 3;
+}
+
+.journey-left .journey-dot {
+    right: -23px;
+}
+
+.journey-right .journey-dot {
+    left: -23px;
+}
+
+/************ Timeline Card ************/
+
+.journey-content {
+    padding: 22px 25px;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 18px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.journey-content:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.journey-year {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.journey-type {
+    display: block;
+    color: #b0008f;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.journey-content h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 7px;
+}
+
+.journey-content h4 {
+    color: #c5c5c5;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+.journey-content p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/************ 2026 Transition ************/
+
+.journey-current {
+    padding-bottom: 10px;
+}
+
+.journey-current .journey-content {
+    border-color: rgba(170, 54, 124, 0.5);
+    background: rgba(170, 54, 124, 0.055);
+    box-shadow: 0 0 30px rgba(170, 54, 124, 0.08);
+}
+
+.journey-current .journey-dot {
+    width: 52px;
+    height: 52px;
+    right: -26px;
+    box-shadow: 0 0 0 5px rgba(170, 54, 124, 0.08);
+}
+
+.journey-highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 14px;
+    padding: 7px 12px;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+
+    border: 1px solid rgba(170, 54, 124, 0.45);
+    border-radius: 20px;
+
+    background: rgba(170, 54, 124, 0.1);
+}
+
+.journey-highlight svg {
+    color: #c000a0;
+}
+
+/************ Divider ************/
+
+.journey-section-divider {
+    max-width: 950px;
+    height: 1px;
+    margin: 12px auto 0;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/************ Professional Journey ************/
+
+.professional-journey {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 32px 0 28px;
+
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+}
+
+.professional-icon,
+.feature-icon {
+    flex-shrink: 0;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    color: #fff;
+    font-size: 22px;
+
+    background: linear-gradient(
+        90.21deg,
+        #aa367c -5.91%,
+        #4a2fbd 111.58%
+    );
+}
+
+.professional-content {
+    flex: 1;
+}
+
+.journey-section-label {
+    display: block;
+    color: #b0008f;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 7px;
+}
+
+.professional-title-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.professional-title-row h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.employment-badge {
+    padding: 5px 10px;
+
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.professional-content > p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 11px 0 18px;
+}
+
+/************ Professional Projects ************/
+
+.professional-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.journey-project {
+    display: flex;
+    gap: 13px;
+
+    padding: 17px;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.journey-project:hover {
+    transform: translateY(-3px);
+    border-color: rgba(170, 54, 124, 0.45);
+}
+
+.project-icon {
+    flex-shrink: 0;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    color: #fff;
+    background: rgba(170, 54, 124, 0.3);
+    font-size: 13px;
+}
+
+.project-info {
+    min-width: 0;
+}
+
+.project-info h4 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.project-tech {
+    display: block;
+    color: #b0008f;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.project-info p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 11px;
+}
+
+/************ Project Links ************/
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    color: #c000a0;
+}
+
+.project-link svg {
+    font-size: 10px;
+}
+
+/************ Featured Projects ************/
+
+.journey-project-feature {
+    max-width: 950px;
+    margin: 0 auto;
+
+    padding: 26px 0;
+
+    display: flex;
+    gap: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 4px 0 5px;
+}
+
+.feature-content > p {
+    max-width: 750px;
+
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin: 9px 0 13px;
+}
+
+.current-project {
+    padding-bottom: 0;
+}
+
+/************ Mobile ************/
+
+@media (max-width: 767px) {
+
+    .journey {
+        padding: 70px 0;
+    }
+
+    .journey-heading {
+        margin-bottom: 45px;
+    }
+
+    .journey-heading h2 {
+        font-size: 35px;
+    }
+
+    .journey-heading p {
+        font-size: 15px;
+    }
+
+    /******** Timeline ********/
+
+    .journey-timeline {
+        padding-left: 25px;
+    }
+
+    .journey-line {
+        left: 7px;
+        transform: none;
+    }
+
+    .journey-item,
+    .journey-left,
+    .journey-right {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 24px 25px;
+        text-align: left;
+    }
+
+    .journey-dot,
+    .journey-left .journey-dot,
+    .journey-right .journey-dot {
+        left: -14px;
+        right: auto;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 14px;
+    }
+
+    .journey-current .journey-dot {
+        left: -17px;
+        right: auto;
+
+        width: 46px;
+        height: 46px;
+    }
+
+    .journey-content {
+        padding: 19px;
+    }
+
+    .journey-content h3 {
+        font-size: 19px;
+    }
+
+    .journey-content h4 {
+        font-size: 13px;
+    }
+
+    .journey-content p {
+        font-size: 13px;
+    }
+
+    /******** Professional ********/
+
+    .professional-journey,
+    .journey-project-feature {
+        gap: 15px;
+        padding: 26px 0;
+    }
+
+    .professional-icon,
+    .feature-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 17px;
+        border-radius: 12px;
+    }
+
+    .professional-title-row h3,
+    .feature-content h3 {
+        font-size: 21px;
+    }
+
+    .professional-content > p,
+    .feature-content > p {
+        font-size: 14px;
+    }
+
+    .professional-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-project {
+        padding: 15px;
+    }
+
+    .project-info h4 {
+        font-size: 16px;
+    }
+}
+
+/************ Small Mobile ************/
+
+@media (max-width: 480px) {
+
+    .journey {
+        padding: 60px 0;
+    }
+
+    .journey-heading h2 {
+        font-size: 30px;
+    }
+
+    .journey-label {
+        font-size: 12px;
+    }
+
+    .professional-journey,
+    .journey-project-feature {
+        gap: 12px;
+    }
+
+    .professional-icon,
+    .feature-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .professional-title-row h3,
+    .feature-content h3 {
+        font-size: 19px;
+    }
+}
